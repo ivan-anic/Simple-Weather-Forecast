@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background_2">
+
+    <com.todddavies.components.progressbar.ProgressWheel
+        android:id="@+id/pw_spinner"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        ProgressWheel:pwBarColor="#0daaec"
+        ProgressWheel:pwBarLength="60dp"
+        ProgressWheel:pwBarWidth="2dp"
+        ProgressWheel:pwRimColor="#330097D6"
+        ProgressWheel:pwRimWidth="5dp"
+        ProgressWheel:pwText="Loading..."
+        ProgressWheel:pwTextColor="#4c4f58"
+        ProgressWheel:pwTextSize="14sp" />
+
+
+    <android.support.v7.widget.GridLayout xmlns:grid="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        grid:columnCount="3"
+        grid:rowCount="4">
+
+        <TextView
+            android:id="@+id/text_header"
+            style="@style/ForecastFont.Header"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            grid:layout_columnSpan="2"
+
+            grid:layout_columnWeight="2"
+            grid:layout_gravity="fill"
+            grid:layout_rowWeight="0.3"
+            tools:text="@string/forecast_header" />
+
+        <ImageButton
+            android:id="@+id/buttonVideo"
+            style="?buttonStyle"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+
+            android:padding="4dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_youtube"
+            grid:layout_columnSpan="1"
+            grid:layout_rowWeight="0.3"
+
+            tools:text="video" />
+
+        <LinearLayout
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            grid:layout_columnSpan="3"
+            grid:layout_columnWeight="3"
+            grid:layout_gravity="fill"
+            grid:layout_rowWeight="0.9">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCurrentTemp"
+                    style="@style/ForecastFont.Big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    tools:text="10°C" />
+
+                <TextView
+                    android:id="@+id/tvCurrentWeather"
+                    style="@style/ForecastFont.Right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    tools:text="Sunny\n15° / 7°\n\nhumidity 5% \nwind E 1m/s\npressure 10352hpa" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageCurrentWeather"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                tools:src="@drawable/icon_youtube2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            grid:layout_columnSpan="3"
+            grid:layout_columnWeight="3"
+            grid:layout_gravity="fill"
+            grid:layout_rowWeight="0.5">
+
+            <TextView
+                android:id="@+id/tvBox1"
+                style="@style/ForecastFont"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                grid:layout_gravity="fill"
+                tools:text="Monday\n\nday: 3°C\nnight: 3°C" />
+
+            <TextView
+                android:id="@+id/tvBox2"
+                style="@style/ForecastFont"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                grid:layout_gravity="fill"
+                tools:text="5°C" />
+
+            <TextView
+                android:id="@+id/tvBox3"
+                style="@style/ForecastFont"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                grid:layout_gravity="fill"
+                tools:text="Tuesday\n\nday: 3°C\nnight: 3°C" />
+        </LinearLayout>
+    </android.support.v7.widget.GridLayout>
+</RelativeLayout>

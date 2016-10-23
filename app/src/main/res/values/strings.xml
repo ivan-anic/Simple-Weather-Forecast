@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Simple Weather Forecast</string>
+    <string name="buttonSearch">Search</string>
+    <string name="etSearch">Your city…</string>
+    <string name="forecast_header">Forecast for %s</string>
+    <string name="extended_forecast"><![CDATA[Click to see the forecast for more days ->]]></string>
+
+    <string name="failed">Video loading has failed.</string>
+    <string name="ok">OK</string>
+
+    <string name="internet_unavailible_message">Your device is not connected to the internet.
+        Please check your internet connection and try again.
+    </string>
+    <string name="internet_unavailible_alert">Internet connectivity</string>
+
+    <string name="api_not_availible_message">Weather data could not be retrieved from the remote
+        server. Please try again later.
+    </string>
+    <string name="api_not_availible_alert">Server connection</string>
+
+    <string name="youtube_error_message">An error has occurred during video initialization. Please
+        try again later.
+    </string>
+    <string name="youtube_alert_alert">Youtube error</string>
+
+    <string name="youtube_fields">items(id/videoId,snippet/title,snippet/description,snippet/thumbnails/default/url)</string>
+    <string name="youtube_type">video</string>
+    <string name="youtube_search_list">id,snippet</string>
+
+    <string name="url_png" formatted="false">http://api.openweathermap.org/img/w/%s.png</string>
+    <string name="jump_to_time">Jump to time (in seconds):</string>
+</resources>

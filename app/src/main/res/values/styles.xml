@@ -1,0 +1,39 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ForecastFont" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:fontFamily">Calibri</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ForecastFont.Right">
+        <item name="android:gravity">center|right</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:textSize">21sp</item>
+    </style>
+
+
+    <style name="ForecastFont.Big">
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="ForecastFont.Header">
+        <item name="android:textSize">28sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center|left</item>
+    </style>
+
+</resources>
